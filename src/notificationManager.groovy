@@ -21,7 +21,7 @@ def emailTemplate(params) {
  * @param buildStatus String with job result
  * @param emailRecipients Array with emails: emailRecipients = []
  */
-def notifyEmail(buildStatus, emailRecipients) {
+def call(buildStatus, emailRecipients) {
 
     try {
 
