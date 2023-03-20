@@ -39,7 +39,7 @@ def call(buildStatus, emailRecipients) {
             "jenkinsUrl"    :   env.BUILD_URL,
             "statusSuccess" :   statusSuccess,
             "hasArtifacts"  :   hasArtifacts,
-            "downloadUrl"   :   "www.downloadurl.com"
+            "downloadUrl"   :   env.RUN_ARTIFACTS_DISPLAY_URL
         ]);
 
         mail (to: emailRecipients.join(","),
