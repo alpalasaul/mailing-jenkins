@@ -9,7 +9,7 @@ import groovy.text.StreamingTemplateEngine
  */
 def emailTemplate(params) {
 
-    def fileContents = readFile("email.groovy")
+    def fileContents = readFile("https://github.com/alpalasaul/mailing-jenkins/blob/master/vars/email.groovy")
     def engine = new StreamingTemplateEngine()
 
     return engine.createTemplate(fileContents).make(params).toString()
